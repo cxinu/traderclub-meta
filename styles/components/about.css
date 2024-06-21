@@ -1,0 +1,150 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about__title {
+    font-size: 2rem;
+    font-weight: 700;
+    /* color: var(--clr-slate400); */
+    padding: 0 1rem;
+}
+
+.about__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-slate400);
+    padding: 1rem 1rem 0;
+    min-width: 24rem;
+}
+
+.about__image {
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+.about__stats-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 32%, 0.083);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+}
+
+.about__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about__count {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-blue600)
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .about {
+        overflow: visible
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .about__title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about__description {
+        max-width: 60%;
+    }
+
+    .about__image {
+        position: static;
+        display: block;
+        width: 30%;
+        height: auto;
+        filter: brightness(100%);
+    }
+
+    .about__stats {
+        gap: 2rem;
+        padding: 1rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .about.container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 2rem;
+    }
+
+    .about__title {
+        font-size: 3.5rem;
+
+    }
+
+    .about__description {
+        font-size: 1.25rem;
+        gap: 3rem;
+    }
+
+    .about__stats {
+        /* font-weight: 700; */
+        font-size: large;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .about__count {
+        font-size: 3rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .about__title {
+        font-size: 4rem;
+    }
+
+    .about__description {
+        font-size: 1.5rem;
+        max-width: 50%;
+    }
+
+    .about__stats {
+        max-width: 1280px;
+        font-size: x-large;
+        gap: 4rem;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
