@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="hero container">
+    <section id="home" className="hero container">
       <div className="hero__content">
         <div className="hero__title">
           <h2>Learn How To</h2>
@@ -33,23 +34,25 @@ export default function HeroSection() {
             </svg>
             Enroll Now
           </button>
-          <button className="flex btn btn--secondary">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </button>
+          <Link href="#about">
+            <button className="flex btn btn--secondary">
+              Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="hero__image">

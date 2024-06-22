@@ -21,10 +21,9 @@ const Counter: React.FC<CounterProps> = ({ count }) => {
 };
 
 export default function AboutSection() {
-  // const [scrollPosition, setScrollPosition] = useState(0);
   return (
     <>
-      <section className="about container section">
+      <section id="about" className="about container section">
         <h2 className="about__title">
           ✦ <strong className="font-bold">Welcome</strong> To Trader Club
         </h2>
