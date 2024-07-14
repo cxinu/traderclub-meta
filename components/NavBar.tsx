@@ -54,31 +54,31 @@ export default function NavBar() {
       <Link href="/">
         <div className="header__logo">
           <div className="header__image">
-            <Image src="/logo.png" alt="logo" fill={true} />
+            <Image src="/logo-dark.png" alt="logo" fill={true} />
           </div>
-          <h4 className="header__text">TRADER CLUB™</h4>
+          <h4 className="header__text">TRADER CLUB</h4>
         </div>
       </Link>
       <ul className="header__menu">
         <li>
-          <a className="header__link" href="#home">
+          <Link className="header__link" href="/">
             HOME
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="header__link" href="#about">
+          <Link className="header__link" href="/#about">
             ABOUT
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="header__link" href="#courses">
+          <Link className="header__link" href="/#courses">
             COURSES
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="header__link" href="#contact">
+          <Link className="header__link" href="/contact">
             CONTACT
-          </a>
+          </Link>
         </li>
       </ul>
       <button className="header__bars" onClick={toggleNav}>
@@ -88,7 +88,7 @@ export default function NavBar() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="currentColor"
+            stroke="grey"
             className="size-6"
           >
             <path
@@ -103,7 +103,7 @@ export default function NavBar() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="currentColor"
+            stroke="grey"
             className="size-6"
           >
             <path

@@ -1,0 +1,6 @@
+.footer__bar {
+    background-color: var(--clr-blue600);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

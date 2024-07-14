@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --clr-dark: #070a13;
-  --clr-light: #f1f5f9;
+  --clr-dark: #252525;
+  --clr-black: #000000;
+
+  --clr-light: #ffffff;
+  --clr-light2: #f8f8f8;
+
   --clr-slate400: #94a3b8;
-  --clr-slate600: #475569;
+  --clr-slate600: #626f81;
   --clr-slate800: #1e293b;
+
   --clr-rose: #e11d48;
   --clr-blue: #0ea5e9;
   --clr-blue600: #0284c7;
@@ -31,7 +36,7 @@
   --size-10xl: 10rem;
 }
 
-.light-mode {
+.dark-mode {
   --clr-light: #070a13;
   --clr-dark: #f1f5f9;
   --clr-slate400: #1e293b;
@@ -50,11 +55,11 @@ html {
 
 body {
   font-family: 'General Sans', sans-serif;
-  /* background-color: var(--clr-dark); */
-  color: var(--clr-light);
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
   min-height: 100vh;
-  background: radial-gradient(95.13% 25.1% at 88.62% 81.8%, rgba(255, 255, 255, 0.085) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.06% 8.65% at 69.4% 57.7%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(44.12% 10.8% at 50.94% 50.3%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(51.6% 11.8% at 74.19% 33.43%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.02% 7.32% at 27.92% 22.49%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(55.73% 15.04% at 98.13% 13.04%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(48.02% 12.96% at 27.97% 3.37%, rgba(255, 255, 255, 0.13) 0%, rgba(33, 33, 43, 0) 100%), linear-gradient(0deg, #0D0C1B, #0D0C1B), #C4C4C4;
-  background-repeat: no-repeat;
+  /* background: radial-gradient(95.13% 25.1% at 88.62% 81.8%, rgba(255, 255, 255, 0.085) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.06% 8.65% at 69.4% 57.7%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(44.12% 10.8% at 50.94% 50.3%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(51.6% 11.8% at 74.19% 33.43%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.02% 7.32% at 27.92% 22.49%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(55.73% 15.04% at 98.13% 13.04%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(48.02% 12.96% at 27.97% 3.37%, rgba(255, 255, 255, 0.13) 0%, rgba(33, 33, 43, 0) 100%), linear-gradient(0deg, #0D0C1B, #0D0C1B), #C4C4C4; */
+  background-repeat: repeat;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -73,6 +78,9 @@ strong {
   color: var(--clr-blue);
 }
 
+h1 strong {
+  font-weight: 700;
+}
 
 @layer base {
   :root {

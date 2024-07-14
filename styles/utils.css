@@ -36,11 +36,23 @@
 }
 
 .btn--secondary {
-    border: solid 1px var(--clr-slate400);
+    border: solid 1px var(--clr-slate600);
+    color: var(--clr-slate600);
 }
 
 .btn--secondary:hover {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-slate600);
 }
 
 /* sm */
@@ -55,6 +67,10 @@
     .container {
         max-width: 768px;
     }
+
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /* lg */
@@ -65,8 +81,17 @@
 
     .section {
         margin-top: 5rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    h1 {
+        line-height: 1em;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
     }
 }
 

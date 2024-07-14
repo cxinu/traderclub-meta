@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import { useState, useEffect } from "react";
 
 type CounterProps = {
   count: number;
@@ -22,19 +20,16 @@ const Counter: React.FC<CounterProps> = ({ count }) => {
 
 export default function AboutSection() {
   return (
-    <>
+    <div className="bg-slate-100">
       <section id="about" className="about container section">
-        <h2 className="about__title">
-          ✦ <strong className="font-bold">Welcome</strong> To Trader Club
-        </h2>
-        <div className="flex justify-evenly gap-4 mb-5">
-          <Image
-            className="about__image"
-            src="/about-section.png"
-            alt="Trader Club"
-            width={300}
-            height={300}
-          />
+        <h1 className="about__title">
+          Welcome To<strong className="font-bold"> ✦ Trader Club</strong>
+        </h1>
+        <div className="about__wrapper">
+          <video className="about__video" controls width="100%">
+            <source src="/traderclub.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className="about__description">
             <p>
               <strong>Trader Club</strong>, founded in 2015, empowers
@@ -77,6 +72,6 @@ export default function AboutSection() {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 }
