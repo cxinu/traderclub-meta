@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.about.section {
+    padding-bottom: 0;
+}
+
 .about__title {
     padding: 0 1rem;
 }
@@ -33,12 +37,11 @@
 }
 
 .about__stats-bg {
-    position: relative;
     display: flex;
     justify-content: center;
     background-color: hsla(0, 0%, 32%, 0.083);
     backdrop-filter: blur(10px);
-    width: 100vw;
+    width: 100%;
 }
 
 .about__stats {
@@ -61,7 +64,7 @@
 
 .about__video {
     width: 90%;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -92,6 +95,11 @@
     .about__stats {
         gap: 2rem;
         padding: 1rem;
+    }
+
+    .about__video {
+        width: 50%;
+        height: 100%;
     }
 }
 

@@ -23,7 +23,14 @@ textarea {
 }
 
 .contact__form {
-    padding: 20px;
+    padding: 2.5rem;
+
+    /* border-radius: 10px;
+    background-position-x: 0%, 0%, 0%;
+    background-position-y: 0%, 0%, 0%;
+    background-repeat: repeat, repeat, repeat;
+    background-attachment: scroll, scroll, scroll;
+    background-image: radial-gradient(277.36% 77.78% at -106.67% 112.17%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0) 100%), conic-gradient(from 142.32deg at 50% 21.64%, rgb(7, 107, 200) 0deg, rgb(18, 146, 237) 360deg), none; */
 }
 
 .contact__info {

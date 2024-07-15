@@ -43,35 +43,35 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="about__stats-bg">
-          <ul className="about__stats">
-            <li>
-              <p className="about__count">
-                <Counter count={50} />+
-              </p>{" "}
-              Batches Completed
-            </li>
-            <li>
-              <p className="about__count">
-                <Counter count={10} />+
-              </p>{" "}
-              Years In Business
-            </li>
-            <li>
-              <p className="about__count">
-                <Counter count={1000} />
-              </p>
-              Happy Students
-            </li>
-            <li>
-              <p className="about__count">
-                <Counter count={40} /> Hr
-              </p>{" "}
-              Live Sessions
-            </li>
-          </ul>
-        </div>
       </section>
+      <div className="about__stats-bg">
+        <ul className="about__stats">
+          <li>
+            <p className="about__count">
+              <Counter count={50} />+
+            </p>{" "}
+            Batches Completed
+          </li>
+          <li>
+            <p className="about__count">
+              <Counter count={10} />+
+            </p>{" "}
+            Years In Business
+          </li>
+          <li>
+            <p className="about__count">
+              <Counter count={1000} />
+            </p>
+            Happy Students
+          </li>
+          <li>
+            <p className="about__count">
+              <Counter count={40} /> Hr
+            </p>{" "}
+            Live Sessions
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

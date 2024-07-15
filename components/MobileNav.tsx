@@ -7,22 +7,22 @@ export default function MobileNav() {
         <ul className="mobile-nav__menu">
           <li>
             <Link className="mobile-nav__link" href="/">
-              ✦ Home
+              Home
             </Link>
           </li>
           <li>
             <Link className="mobile-nav__link" href="/#about">
-              ✦ About
+              About
             </Link>
           </li>
           <li>
             <Link className="mobile-nav__link" href="/#courses">
-              ✦ Courses
+              Courses
             </Link>
           </li>
           <li>
             <Link className="mobile-nav__link" href="/contact">
-              ✦ Contact
+              Contact
             </Link>
           </li>
         </ul>
