@@ -42,7 +42,6 @@
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 600;
-    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -61,11 +60,11 @@
 }
 
 .course__wrapper .best-offer h2 {
-    color: var(--clr-light);
+    color: var(--background);
 }
 
 .course__wrapper .best-offer p {
-    color: var(--clr-light);
+    color: var(--background);
 }
 
 .course__card {
@@ -73,14 +72,21 @@
     flex: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     scroll-snap-align: center;
 
-    gap: 1rem;
+
     min-width: 325px;
-    padding: 2rem;
     margin-right: 1.5rem;
+    padding: 2rem;
     border-radius: 0.5rem;
-    background-color: var(--clr-light);
+    background-color: var(--background);
+}
+
+.course__card h2 {
+    display: flex;
+    min-height: 4.5rem;
+    align-items: center;
 }
 
 /* xs */

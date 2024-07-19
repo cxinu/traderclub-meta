@@ -59,7 +59,7 @@
 .about__count {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--clr-blue600)
+    color: var(--primary);
 }
 
 .about__video {

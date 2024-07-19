@@ -5,7 +5,7 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 
-    /* border: 1px solid var(--clr-blue); */
+    /* border: 1px solid var(--accent); */
 }
 
 .section {
@@ -19,7 +19,6 @@
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    color: var(--clr-light);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -28,11 +27,12 @@
 }
 
 .btn--primary {
-    background-color: var(--clr-blue);
+    background-color: var(--accent);
+    color: var(--background);
 }
 
 .btn--primary:hover {
-    background-color: var(--clr-blue600);
+    background-color: var(--primary);
 }
 
 .btn--secondary {

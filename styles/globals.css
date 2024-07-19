@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --clr-dark: #252525;
-  --clr-black: #000000;
-
-  --clr-light: #ffffff;
-  --clr-light2: #f8f8f8;
-
   --clr-slate400: #94a3b8;
   --clr-slate600: #626f81;
   --clr-slate800: #1e293b;
 
-  --clr-rose: #e11d48;
-  --clr-blue: #0ea5e9;
+  /* --clr-blue: #0ea5e9; */
+  --clr-blue: #289cfb;
   --clr-blue600: #0284c7;
   --clr-blue700: #0369a1;
+
+  /* real time colors */
+  --text: hsl(208, 42%, 6%);
+  --background: hsl(200, 60%, 99%);
+  --background-100: hsl(200, 60%, 90%);
+  --background-200: hsl(200, 60%, 80%);
+  --primary: hsl(207, 69%, 54%);
+  --secondary: hsl(207, 80%, 72%);
+  --accent: hsl(207, 96%, 57%);
 
   /* sizes */
   --size-xxs: 0.5rem;
@@ -36,14 +39,6 @@
   --size-10xl: 10rem;
 }
 
-.dark-mode {
-  --clr-light: #070a13;
-  --clr-dark: #f1f5f9;
-  --clr-slate400: #1e293b;
-  --clr-slate600: #1e293b;
-  --clr-slate800: #1e293b;
-}
-
 * {
   margin: 0;
   line-height: calc(1em + 0.5rem);
@@ -55,8 +50,8 @@ html {
 
 body {
   font-family: 'General Sans', sans-serif;
-  background-color: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: var(--background);
+  color: var(--text);
   min-height: 100vh;
   /* background: radial-gradient(95.13% 25.1% at 88.62% 81.8%, rgba(255, 255, 255, 0.085) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.06% 8.65% at 69.4% 57.7%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(44.12% 10.8% at 50.94% 50.3%, rgba(255, 255, 255, 0.052) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(51.6% 11.8% at 74.19% 33.43%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(32.02% 7.32% at 27.92% 22.49%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(55.73% 15.04% at 98.13% 13.04%, rgba(255, 255, 255, 0.065) 0%, rgba(33, 33, 43, 0) 100%), radial-gradient(48.02% 12.96% at 27.97% 3.37%, rgba(255, 255, 255, 0.13) 0%, rgba(33, 33, 43, 0) 100%), linear-gradient(0deg, #0D0C1B, #0D0C1B), #C4C4C4; */
   background-repeat: repeat;
@@ -75,60 +70,12 @@ svg {
 }
 
 strong {
-  color: var(--clr-blue);
+  color: var(--accent);
 }
 
 h1 strong {
   font-weight: 700;
 }
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  }
-}
-
 
 @layer base {
   * {
