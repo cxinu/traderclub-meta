@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function TickMark({ color }: { color?: string }) {
   return (
     <svg
@@ -11,7 +13,7 @@ function TickMark({ color }: { color?: string }) {
       <path
         d="M3 9.72308L11.1385 17.8615L26 3"
         {...(color ? { stroke: color } : { stroke: "var(--accent)" })}
-        stroke-width="5.66154"
+        strokeWidth="5.66154"
         data-astro-cid-j7pv25f6=""
       ></path>
     </svg>
@@ -76,9 +78,11 @@ export default function CourseSection() {
           </div>
         </div>
         <div className="px-[16px] w-full sm:w-auto">
-          <button className="btn btn--primary justify-center w-full sm:w-auto">
-            Learn More
-          </button>
+          <Link href="/contact">
+            <button className="btn btn--primary justify-center w-full sm:w-auto">
+              Learn More
+            </button>
+          </Link>
         </div>
       </section>
     </div>
