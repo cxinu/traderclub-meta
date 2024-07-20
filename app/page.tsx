@@ -24,7 +24,7 @@ export default function Home() {
         <AboutSection />
         <CourseSection />
         {/* <CourseDetails /> */}
-        {/* <Testimonials /> */}
+        <Testimonials />
       </main>
     </>
   );

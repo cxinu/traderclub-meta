@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-slate-200 p-4">
+    <footer className="footer bg-slate-200 px-4 py-6">
       <div className="footer__content container flex justify-between">
         <div className="">
           <div className="header__logo">
@@ -12,7 +12,7 @@ export default function Footer() {
             <h4 className="header__text">TRADER CLUB</h4>
           </div>
         </div>
-        <p className="text-base h-14 flex flex-col justify-end">
+        <p className="text-base flex flex-col justify-end">
           ©2024 Traderclub All Rights Reserved.
         </p>
       </div>
